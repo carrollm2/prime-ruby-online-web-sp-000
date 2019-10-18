@@ -4,11 +4,11 @@ def prime?(number)
   end
 
   divisor = number - 1
-  
+
   while divisor > 1
 
     quotient = number / divisor
-    if quotient.integer?
+    if number % divisor == 0
       return false
     end
     divisor -= 1
