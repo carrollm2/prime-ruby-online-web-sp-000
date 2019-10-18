@@ -3,14 +3,8 @@ def prime?(number)
     return false
   end
 
-
-  divisor = ((number.to_f ** 0.5).ceil) - 1
-
-  if divisor == 1
-    return false
-  end
-
-
+  divisor = number - 1
+  
   while divisor > 1
 
     quotient = number / divisor
